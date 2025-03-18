@@ -12,5 +12,7 @@
 * Navbar
 * Modal
 * Carrossel
+* Alert
+* layout completo
   
  
