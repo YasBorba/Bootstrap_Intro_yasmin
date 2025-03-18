@@ -28,10 +28,39 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
          </div>
 
+        
+         <!-- alerta de erro -->
          <div class="alert alert-danger alert-dismissible fade" id="errorAlert">
             <p><strong>Erro</strong> Alerta realizado como erro</p>
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
          </div>
+
+         <!-- toast -->
+          <div class="position-fixed top-0 end-0 p-3">
+                <div class="toast" id="liveToast" aria-live="assertive" aria-atomic="true" role="alert">
+                    <div class="toast-header">
+                        <h3>Toast atenção!</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                    </div>
+                    <div class="toast-body">
+                        <p>toast toast toast</p>
+                    </div>
+                </div>
+          </div>
+
+          <!-- barra de progresso -->
+           <h5 class="mt-4">Barra de progresso:</h5>
+           <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" id="dynamicProgress" role="progressbar" style="width: 0%;">
+                    0%
+                </div>
+           </div>
+
+           <!-- controle da barra de progresso -->
+            <div class="btn-group">
+                <button class="btn btn-secondary" id="decreaseBtn">-10%</button>
+                <button class="btn btn-secondary" id="increaseBtn">+10%</button>
+            </div>
      </div>
 
 

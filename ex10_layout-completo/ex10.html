@@ -7,9 +7,150 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    
-  
-    <!-- 1ª Digitação (Aqui) -->
+    <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">F1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Campeonato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </nav>
+
+     <!-- Conteudo principal -->
+      <div class="container mt-4">
+        <!-- alert -->
+         <div class="alert alert-danger alert-dismissible fade show">
+            Bem-vindo ao nosso site! Confira tudo sobre Formula1.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+         </div>
+
+         <div class="row">
+            <!-- coluna principal -->
+             <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Formula 1 🏎️🏁</h5>
+                        <p class="card-text">Fórmula 1, comumente abreviada como F1, é a mais alta classe de corrida internacional para carros de corrida de fórmula monopostos de roda aberta sancionados pela Fédération Internationale de l'Automobile.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contatoModal">
+                            Saiba mais!
+                        </button>
+                    </div>
+                </div>
+
+                <!-- grid de produtos -->
+                 <div class="row">
+                    <div class="col sm-6 mb-4">
+                        <div class="card">
+                            <img src="img/f1600.jpg" class="card-img-top" alt="ferrari">
+                            <div class="card-body">
+                                <h5 class="card-title">Carro da Ferrari</h5>
+                                <p class="card-text">A Scuderia Ferrari, atualmente competindo como Scuderia Ferrari HP, é uma equipe de automobilismo da montadora italiana Ferrari que compete no campeonato da Fórmula 1. É a equipe mais antiga em atividade na categoria.</p>
+                                <button class="btn btn-success">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col sm-6 mb-4">
+                        <div class="card">
+                            <img src="img/f1-2600.jpg" class="card-img-top" alt="largada">
+                            <div class="card-body">
+                                <h5 class="card-title">Temporada 2021</h5>
+                                <p class="card-text">A disputa pelo título foi intensa entre Max Verstappen e Lewis Hamilton, da Mercedes, com ambos disputando a liderança do campeonato e protagonizando momentos marcantes ao longo da temporada. O campeonato foi decidido na última corrida em Abu Dhabi, onde Verstappen e Hamilton chegaram empatados em pontos. Na última volta da corrida, Verstappen ultrapassou Hamilton após uma relargada, garantindo seu título. </p>
+                                <button class="btn btn-success">Ver mais</button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+
+             <!-- sidebar -->
+              <div class="col-md-4">
+                <!-- form de newaletter -->
+                 <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Novo por aqui?</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-contrl" id="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Inscrever</button>
+                        </form>
+                    </div>
+                 </div>
+
+                 <!-- links rapidos -->
+                  <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Links Rapidos</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Sobre Nós</a>
+                            <a href="#" class="list-group-item list-group-item-action">Serviços</a>
+                            <a href="#" class="list-group-item list-group-item-action">FAQ</a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+         </div>
+      </div>
+
+      <!-- modal de contato -->
+       <div class="modal fade" id="contatoModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modaltitle">Entre em contato</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="emailContato" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailContato" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea  class="form-control" id="mensagem" rows="3">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Fechar
+                        </button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+       </div>
+
+       <!-- footer -->
+        <footer class="bg-dark text-white mt-5 py3">
+            <div class="container text-center">
+                <p class="mb-0">&copy; 2025 Meu site. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
